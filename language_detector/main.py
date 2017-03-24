@@ -14,10 +14,8 @@ def detect_language(text, languages):
             if common_word in list_of_words:
                 counter += 1
         word_count[item['name']]=counter
-    print word_count    
-    
+
     maximum = max(word_count, key=word_count.get)
     
-    print maximum
-            
     return maximum
+    
